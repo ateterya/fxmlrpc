@@ -1,5 +1,8 @@
 {
-    "name": "lstrojny/fxmlrpc",
+    "name": "ateterya/fxmlrpc",
+    "replace": {
+        "lstrojny/fxmlrpc": "0.11"
+    },
     "description": "Fast and tiny XML/RPC client with bridges for various HTTP clients",
     "keywords": ["xmlrpc", "xml", "api", "rpc", "performance"],
     "license": "MIT",

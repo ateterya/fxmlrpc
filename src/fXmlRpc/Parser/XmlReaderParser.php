@@ -115,6 +115,11 @@ final class XmlReaderParser implements ParserInterface
             }
 
             $tagName = $xml->localName;
+
+            if($tagName === 'ex:nil'){
+                $tagName = 'nil';
+            }
+
             if ($nextExpectedElements !== null &&
                 ($flag = isset(${'flag' . $tagName}) ? ${'flag' . $tagName} : -1) &&
                 ($nextExpectedElements & $flag) !== $flag
